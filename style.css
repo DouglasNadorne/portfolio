@@ -3,20 +3,20 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
 
-:root{
+:root {
     --font-primary: "Baloo Da 2", serif;
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Mulish", serif;
 }
 
-.hamburguer{
+.hamburguer {
     width: 2rem;
     height: 2rem;
     position: fixed;
@@ -29,31 +29,32 @@
     cursor: pointer;
 }
 
-.show-menu .hamburguer{
+.show-menu .hamburguer {
     right: 17rem;
 }
 
-.line{
+.line {
     width: 100%;
     height: .1rem;
     background-color: #fff;
     box-shadow: 0.1rem 0.1rem 1px #000;
-    transition:  transform 1s;
-}
-.show-menu #line1{
-   transform: rotate(45deg) translate(0.3rem, .45rem);
+    transition: transform 1s;
 }
 
-.show-menu #line2{
+.show-menu #line1 {
+    transform: rotate(45deg) translate(0.3rem, .45rem);
+}
+
+.show-menu #line2 {
     opacity: 0;
     visibility: hidden;
 }
 
-.show-menu #line3{
+.show-menu #line3 {
     transform: rotate(-45deg)translate(0.3rem, -0.45rem);
- }
+}
 
-.hamburguer span{
+.hamburguer span {
     position: absolute;
     left: 3rem;
     height: 2rem;
@@ -67,7 +68,7 @@
     opacity: 0;
 }
 
-.hamburguer span::before{
+.hamburguer span::before {
     content: "";
     position: absolute;
     border-right: .5rem solid rgb(105, 98, 98);
@@ -77,25 +78,25 @@
     left: -1rem;
 }
 
-.show-menu .hamburguer:hover span{
+.show-menu .hamburguer:hover span {
     opacity: 1;
 }
 
-header{
+header {
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
 }
 
-.img-wrapper{
+.img-wrapper {
     width: 100%;
     height: 100%;
     overflow: hidden;
     background-color: rgba(36, 22, 35, 0.7);
 }
 
-.img-wrapper img{
+.img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -104,21 +105,22 @@ header{
 }
 
 @keyframes zoom {
-    0%{
+    0% {
         transform: scale(1.5);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
 
-.banner{
+.banner {
     position: absolute;
     left: 15%;
     top: 30%;
 }
 
-.banner h1{
+.banner h1 {
     color: white;
     font-size: 3rem;
     font-family: var(--font-primary);
@@ -128,9 +130,9 @@ header{
     margin-bottom: 2rem;
     opacity: 0;
     animation: moveBanner 1s 0.5s forwards;
-} 
+}
 
-.banner p{
+.banner p {
     font-family: var(--font-secundary);
     color: #fff;
     font-size: 2rem;
@@ -140,14 +142,14 @@ header{
     animation: moveBanner 1s 0.7s forwards;
 }
 
-.banner button{
+.banner button {
     font-family: var(--font-action);
     color: #fff;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    background: #241623;  
-    background: -webkit-linear-gradient(to right, #434343, #241623); 
-    background: linear-gradient(to right, #434343, #241623); 
+    background: #241623;
+    background: -webkit-linear-gradient(to right, #434343, #241623);
+    background: linear-gradient(to right, #434343, #241623);
     padding: 1rem 3rem;
     border: none;
     border-radius: 5px;
@@ -156,68 +158,70 @@ header{
     animation: moveBanner 1s 0.9s forwards;
 }
 
-@keyframes moveBanner{
-    0%{
+@keyframes moveBanner {
+    0% {
         transform: translateY(10rem) rotateY(-30deg);
     }
-    100%{
+
+    100% {
         transform: translateY(0) rotateY(0deg);
         opacity: 0.8;
     }
 }
 
-.banner button:hover{
+.banner button:hover {
     padding: 1.2rem 3.2rem;
 }
 
-.sidebar{
+.sidebar {
     width: 20rem;
     height: 100vh;
-    background-color: #000; 
-    position: fixed;  
+    background-color: #000;
+    position: fixed;
     top: 0;
     right: -20rem;
     opacity: 0.8;
 }
 
-.show-menu .sidebar{
+.show-menu .sidebar {
     right: 0;
 }
 
-.menu{
+.menu {
     position: absolute;
     top: 40%;
     left: 50%;
     font-size: 4.5vh;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.menu-item{
+.menu-item {
     text-align: center;
     margin: .5rem;
 }
 
-.menu-link{
+.menu-link {
     font-family: var(--font-action);
     size: 2rem;
     color: #fff;
     transition: color 1s;
-    
+
 }
 
-.menu-link:hover{
+.menu-link:hover {
     opacity: 1;
     color: rgba(255, 251, 0, 0.644);
 }
 
-.social-media{
+.social-media {
     position: absolute;
     bottom: 2rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
-.social-media i{   
+
+.social-media i {
     color: #fff;
     height: 2.5rem;
     width: 2.5rem;
@@ -229,10 +233,12 @@ header{
     opacity: 0.5;
     transition: color 1s;
 }
-.social-media i:hover{
-    color: rgb(81, 127, 164);
+
+.social-media i:hover {
+    color: rgb(206, 27, 161);
 }
-.social-media f{   
+
+.social-media f {
     color: #fff;
     height: 2.5rem;
     width: 2.5rem;
@@ -244,11 +250,13 @@ header{
     opacity: 0.5;
     transition: color 1s;
 }
-.social-media f:hover{
+
+.social-media f:hover {
     color: rgb(59, 89, 152);
     opacity: 1;
 }
-.social-media t{   
+
+.social-media t {
     color: #fff;
     height: 2.5rem;
     width: 2.5rem;
@@ -260,11 +268,13 @@ header{
     opacity: 0.5;
     transition: opacity 1s;
 }
-.social-media t:hover{
+
+.social-media t:hover {
     color: rgb(0, 172, 237);
     opacity: 1;
 }
-.social-media l{   
+
+.social-media l {
     color: #fff;
     height: 2.5rem;
     width: 2.5rem;
@@ -276,12 +286,13 @@ header{
     opacity: 0.5;
     transition: opacity 1s;
 }
-.social-media l:hover{
+
+.social-media l:hover {
     color: rgb(9, 118, 180);
     opacity: 1;
 }
 
-.social-media g{   
+.social-media g {
     color: #fff;
     height: 2.5rem;
     width: 2.5rem;
@@ -293,6 +304,7 @@ header{
     opacity: 0.5;
     transition: opacity 1s;
 }
-.social-media g:hover{
+
+.social-media g:hover {
     opacity: 1;
 }

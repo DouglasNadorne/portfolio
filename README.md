@@ -7,8 +7,8 @@ O controle das tarefas desse projeto sera realizado no GitHub
 
 ## Tecnologias
 
--HTML5
--CSS3
+- HTML5
+- CSS3
 
 ## Icones
 

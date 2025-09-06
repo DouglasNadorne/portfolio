@@ -5,10 +5,10 @@ Projeto com intuito de apresentar meus conhecimentos em Front-End na área de de
 
 O controle das tarefas desse projeto sera realizado no GitHub
 
-##Tecnologias
+## Tecnologias
 
-HTML5
-CSS3
+-HTML5
+-CSS3
 
 ## Icones
 
